@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a1fe46ce81.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Harry's pets</title>
+</head>
+<body>
+    <!--Wrapper de pagina-->
+    <div class="wrapper">
+        <header>
+            <nav class="header-nav">
+                <div class="contenedor-logo">
+                    <i class="fa-solid fa-cat logo"></i>
+                    <span class="span-nav"><a id="link-spam-nav" href="index.html">Harry's Pets</a></span>
+                </div>
+                <div class="contenedor-links-usuario">
+                    <ul class="lista-nav">
+                        <li class="item-lista-nav"><a class="link-nav" href="index.html">Inicio</a></li>
+                        <li class="item-lista-nav"><a class="link-nav" href="#quienes-somos">Quiénes somos</a></li>
+                        <li class="item-lista-nav"><a class="link-nav" href="#todoparatumascota">Todo para tu mascota</a></li>
+                        <li class="item-lista-nav"><a class="link-nav" href="public/adopta.html">Adopta</a></li>
+                        <li class="item-lista-nav"><a class="link-nav" href="#contactanos">Contáctanos</a></li>
+                    </ul>
+                    <a href="public/iniciasesion.html">
+                        <i class="fa-solid fa-arrow-right-to-bracket login"></i>
+                    </a>
+                </div>
+            </nav>
+            
+        </header>
+        <section>
+            <div class="contenedor-img-header">
+                <div class="contenedor-frase-header">
+                    <div class="contenedor-frase-uno">
+                        <p>¡Encontrá todo para tu mascota en un solo lugar!</p>
+                    </div>
+                    <div class="contenedor-frase-dos">
+                        <h3>"Hasta que uno no ha amado a un animal, parte de su alma permanece dormida"</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main>
+            <section id="quienes-somos">
+                <div class="contenedor-main">
+                    <div class="contenedor-quienes-somos">
+                        <div>
+                            <h3 class="titulos-secciones">Quiénes somos</h3>
+                            <div class="underline-qs"></div>
+                        </div>
+                            <p id="parrafo-quienes-somos">Somos una organización dedicada a ayudar en el crecimiento y cuidado de mascotas. Surgió gracias a un gato gris llamado Harry. La idea es que al igual que él, todos los animales tengan la oportunidad de crecer con una familia, vivir bien y feliz. Si aman a los animales igual que nosotros, sean bienvenidos.</p>
+                    </div>
+                    <div class="contenedor-mapa">
+                        <h4 id="intro-mapa">Nos podes encontrar en:</h4> 
+                        <img id="imagen-mapa" src="https://www.google.com/maps/d/thumbnail?mid=1mLXEQEAE5eqa40SfAK9S7NiHBoQ&hl=en" alt="Mapa donde pueden encontrarnos.">
+                    </div>
+                </div>
+            </section>
+            <section id="todoparatumascota">
+                <div class="contenedor-shopmascotas">
+                    <h3 class="titulos-secciones">Todo para tu mascota</h3>
+                    <div class="underline-tm"></div>
+                    <div class="contenedor-imagenes-sm">
+                        <div>
+                            <span><p class="titulos-sm">Alimentos</p></span>
+                            <img class="img-sm" src="img/alimentos.png" alt="Alimentos">
+                        </div>
+                        <div>
+                            <span><p class="titulos-sm">Accesorios</p></span>
+                            <img class="img-sm" src="img/accesorios.png" alt="Accesorios">
+                        </div>
+                        <div>
+                            <span><p class="titulos-sm">Estética e higiene</p></span>
+                            <img class="img-sm" src="img/estetica.png" alt="Estética e higiene">
+                        </div>
+                        <div>
+                            <span><p class="titulos-sm">Salud</p></span>
+                            <img class="img-sm" src="img/salud.png" alt="Salud">
+                        </div>
+                        <div>
+                            <span><p class="titulos-sm">Snacks</p></span>
+                            <img class="img-sm" src="img/snacks.png" alt="Snacks">
+                        </div>
+                        <div>
+                            <span><p class="titulos-sm">Ofertas</p></span>
+                            <img class="img-sm" src="img/oferta.png" alt="Ofertas">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-banners">
+                    <div class="contenedor-veterinario">
+                        <a href="public/sectorveterinario.html">
+                            <img class="img-banners" src="img/veterinario.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="contenedor-eventos">
+                        <a href="public/eventos.html">
+                            <img class="img-banners" src="img/eventos.jpeg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="contactanos">
+                <div class="contenedor-contactanos">
+                    <h3 class="titulos-secciones">Contáctanos</h3>
+                    <div class="underline-c"></div>
+                    <div class="contenedor-form-contactanos">
+                        <form action="">
+                            <div class="contenedor-inputs">
+                                <input class="inputs-contactanos" type="text" placeholder="NOMBRE Y APELLIDO" required>
+                            </div>
+                            <div class="contenedor-inputs">
+                                <input class="inputs-contactanos" type="text" placeholder="CORREO ELECTRÓNICO" required>
+                            </div>
+                            <div>
+                                <input class="inputs-contactanos" type="text" placeholder="NÚMERO DE CELULAR">
+                            </div>
+                            <div>
+                                <textarea maxlength="250" name="" id="" cols="30" rows="7" placeholder="Escribi tu mensaje." required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contenedor-footer">
+                <div class="contenedor-logo">
+                    <i class="fa-solid fa-cat logo"></i>
+                    <span class="span-nav"><a id="link-spam-nav" href="index.html">Harry's Pets</a></span>
+                </div>
+                <div>
+                    harryspets@gmail.com
+                </div>
+                <div>
+                    Copyright © Harry's Pets 
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook iconos-footer"></i>
+                    <i class="fa-brands fa-twitter iconos-footer"></i>
+                    <i class="fa-brands fa-instagram-square iconos-footer"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
