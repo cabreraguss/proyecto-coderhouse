@@ -12,12 +12,17 @@ body {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    z-index: 10;
 
     background-color: rgba(15,38,73,.95);
     height: 80px;
     width: 100%;
 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navmobile{
+    display: none;
 }
 
 .contenedor-logo{
@@ -92,7 +97,7 @@ body {
 }
 
 .contenedor-img-header{
-    height: 650px;
+    height: 698px;
     padding-top:80px;
     background-image: url('../img/fondo-header.jpg');
     background-size:cover;
@@ -155,6 +160,15 @@ body {
     font-size: 30px;
     background-color: rgba(191, 47, 191, 0.634);
     border-radius: 20px;
+    margin: 10px;
+}
+
+.contenedor-frase-uno p{
+    margin: 30px 0;
+}
+
+.contenedor-frase-dos p{
+    margin: 30px 0;
 }
 
 .contenedor-main{
@@ -253,7 +267,7 @@ body {
 
 .img-sm:hover{
     transition: 1s;
-    -webkit-transform:scale(1.3);transform:scale(1.3);   
+    -webkit-transform:scale(1.2);transform:scale(1.2);   
 }
 
 
@@ -291,7 +305,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    height: 600px;
+    height: 700px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     padding: 70px;
@@ -313,7 +327,7 @@ body {
 }
 
 .contenedor-form-contactanos{
-    height: 450px;
+    height: 530px;
     width: 330px;
     margin: 50px;
     padding: 30px;
@@ -363,7 +377,7 @@ textarea{
 
 
 
-button{
+.button{
     cursor: pointer;
     width: 154px;
     height: 44px;
@@ -382,6 +396,13 @@ button{
     font-size: 13px;
     text-align: center;
     letter-spacing: .04em;
+    border: 1px;
+    border-color: rgb(191, 47, 191);
+}
+
+.button:hover{
+    background-color: rgb(135, 32, 135);
+    border-color:  rgb(135, 32, 135);
 }
 
 .contenedor-footer{
@@ -411,16 +432,11 @@ button{
     }    
 
     .header-nav {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
-    
-        background-color: rgba(15,38,73,.95);
-        width: 100vw;
-        height: inherit;
-        position: inherit;
+        display: none
+    }
+
+    .navmobile{
+        display: inherit;
     }
 
     .contenedor-frase-uno{
@@ -562,13 +578,12 @@ button{
 /*CSS DE ADOPTA*/
 
 .contenedor-img-adopta{
-    height: 699px;
     background-size:cover;
     display: flex;
     flex-direction: column;
     justify-content:left;
     background-image: url('../img/perrito.jpg');
-    padding-top: 70px;
+    padding-top: 90px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -591,8 +606,8 @@ button{
 }
 
 .contenedor-form-adopta{
-    height: 600px;
-    width: 330px;
+    height: 570px;
+    width: 400px;
     margin: 50px;
     padding: 30px;
 
@@ -642,7 +657,6 @@ button{
 
 .boton-enviar{
     border-radius: 10px;
-    border: 2px solid rgb(188, 47, 146);
 }
 
 .adopta{
@@ -656,7 +670,6 @@ button{
     flex-direction: column;
     align-items: center;
 
-    height: 450px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     padding: 100px;
@@ -674,7 +687,6 @@ button{
 }
 
 .contenedor-form-is{
-    height: 450px;
     width: 330px;
     margin: 50px;
     padding: 30px;
@@ -687,7 +699,7 @@ button{
 /*CSS DE EVENTOS*/
 
 .contenedor-header-eventos{
-        height: 650px;
+        height: 699px;
         padding-top:80px;
         background-image: url('../img/perrosevento.jpg');
         background-size:cover;
@@ -718,7 +730,6 @@ button{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    height: 750px;
     padding: 50px;
     align-items: center;
     text-align: center;
@@ -737,5 +748,10 @@ button{
 /*CSS DE SECTOR VETERINARIO*/
 
 .contenedor-sector-vete{
-    height: 650px;
+    padding-top: 90px;
+}
+
+.img-carousel{
+    height: 550px;
+    margin: 0 auto;
 }
