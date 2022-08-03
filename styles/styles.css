@@ -423,157 +423,6 @@ textarea{
     margin: 5px;
 }
 
- /* media query para mobile */
-
-@media screen and (max-width:480px) {
-
-    .wrapper{
-        overflow: hidden;
-    }    
-
-    .header-nav {
-        display: none
-    }
-
-    .navmobile{
-        display: inherit;
-    }
-
-    .contenedor-frase-uno{
-        width: 100%;
-    }
-    
-    .contenedor-frase-dos{
-        width: 100%;
-
-    }
-
-    .contenedor-frase-header {
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
-    .contenedor-main{
-        flex-direction: column;
-        height: inherit;
-    }
-
-    .contenedor-quienes-somos{
-        width: 100%;
-    }
-
-    .contenedor-mapa{
-        width: 100%;
-    }
-
-    .contenedor-imagenes-sm {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-row-gap: 50px;
-        text-align: center;
-        grid-template-columns: inherit;
-        grid-column-gap: inherit;
-    }
-
-    .contenedor-banners{
-        height: inherit;
-        grid-template-columns: inherit;
-        grid-column-gap: inherit;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
-        text-align: center;
-    }
-
-
-    .img-banners{
-        margin: 10 auto;
-        height: 300px;
-        width: 90%;
-    }
-
-    .contenedor-form-contactanos{
-        margin: 10 auto;
-        width: 90vw;
-        box-sizing: border-box;
-        height: inherit;
-    }
-
-    .contenedor-footer{
-        flex-direction: column;
-    }
-    
-    .contenedor-logo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .contenedor-links-usuario{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .logo{
-        color: white;
-        font-size: 35px;
-        margin: 5px;
-    }
-    
-    .icono-regresar{
-        font-size: 25px;
-        margin-top: 10px;
-        color: white;
-    }
-    
-    .span-nav {
-        font-size: 25px;
-        font-weight: bold;
-    }
-    
-    #link-spam-nav{
-        text-decoration: none;
-        color: white;
-        font-size: 25px;
-        font-weight: bold;
-    }
-    
-    .lista-nav {
-        font-size: 0;
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-    }
-    
-    .item-lista-nav {
-        font-size: 25px;
-        margin: 10px;
-    }
-    
-    .link-nav {
-        text-decoration: none;
-        color: rgb(191, 47, 191);
-        font-size: 18px;
-        font-weight: bold;
-    }
-    
-    .link-nav:hover{
-        transition: 0.7s;
-        color: white;
-        font-weight: bold;
-        text-decoration: double;
-    }
-    
-    .login{
-        font-size: 30px;
-        color: white;
-        margin: 10px;
-    }
-    
-}
 
 /*CSS DE ADOPTA*/
 
@@ -754,4 +603,208 @@ textarea{
 .img-carousel{
     height: 550px;
     margin: 0 auto;
+}
+
+
+ /* media query para mobile */
+
+ @media screen and (max-width:480px) {
+
+    .wrapper{
+        overflow: hidden;
+    }    
+
+    .header-nav {
+        display: none
+    }
+
+    .navmobile{
+        display: inherit;
+        background-color: rgba(15,38,73,.95) !important;
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+    }
+
+    .contenedor-frase-uno{
+        width: 100%;
+    }
+    
+    .contenedor-frase-dos{
+        width: 100%;
+
+    }
+
+    .contenedor-frase-header {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .contenedor-main{
+        flex-direction: column;
+        height: inherit;
+    }
+
+    .contenedor-quienes-somos{
+        width: 100%;
+    }
+
+    .contenedor-mapa{
+        width: 100%;
+    }
+
+    .contenedor-imagenes-sm {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 50px;
+        text-align: center;
+        grid-template-columns: inherit;
+        grid-column-gap: inherit;
+    }
+
+    .contenedor-banners{
+        height: inherit;
+        grid-template-columns: inherit;
+        grid-column-gap: inherit;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .img-banners{
+        margin: 10 auto;
+        height: 300px;
+        width: 90%;
+    }
+
+    .contenedor-form-contactanos{
+        margin: 10 auto;
+        width: 90vw;
+        box-sizing: border-box;
+        height: inherit;
+    }
+
+    .contenedor-footer{
+        flex-direction: column;
+    }
+    
+    .contenedor-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contenedor-links-usuario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo{
+        color: white;
+        font-size: 35px;
+        margin: 5px;
+    }
+    
+    .icono-regresar{
+        font-size: 25px;
+        margin-top: 10px;
+        color: white;
+    }
+    
+    .span-nav {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    #link-spam-nav{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .lista-nav {
+        font-size: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .item-lista-nav {
+        font-size: 25px;
+        margin: 10px;
+    }
+    
+    .link-nav {
+        text-decoration: none;
+        color: rgb(191, 47, 191);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .link-nav:hover{
+        transition: 0.7s;
+        color: white;
+        font-weight: bold;
+        text-decoration: double;
+    }
+    
+    .login{
+        font-size: 30px;
+        color: white;
+        margin: 10px;
+    }
+
+    .img-banners:hover{
+        transition: 0.7s;
+        width: 90% !important;
+        filter: none;
+    }
+
+    .titulo-solicitud{
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    
+    .underline-adopta{
+        width: 90%;
+        max-width: 370px;
+        margin: 0 auto;
+        max-height: 381px;
+        border: 1px solid rgb(191, 47, 191);
+        transform: matrix(1,0,0,-1,0,0);
+        opacity: .5;
+    }
+    
+    .contenedor-form-adopta{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .contenedor-titulo{
+        width: 100%;
+    }
+
+    .img-carousel{
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .footer-vete{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .contenedor-eventos-2{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: none;
+    }
+    
 }
