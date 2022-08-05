@@ -1,0 +1,821 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000829;
+}
+/*CSS DE INDEX*/
+
+/*VARIABLE*/
+
+$azul-navbar: rgba(15,38,73,.95);
+$fuente-segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+
+    background-color: $azul-navbar;
+    height: 80px;
+    width: 100%;
+
+    font-family:$fuente-segoe;
+
+    .contenedor-logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .logo{
+            color: white;
+            font-size: 35px;
+            margin: 5px;
+        }
+
+        .span-nav {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #link-spam-nav{
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+
+    .contenedor-links-usuario{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .lista-nav {
+            font-size: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+
+            .item-lista-nav {
+                font-size: 25px;
+                margin: 10px;
+            }
+        }
+        
+        .link-nav {
+            text-decoration: none;
+            color: rgb(191, 47, 191);
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .link-nav:hover{
+            transition: 0.7s;
+            color: white;
+            font-weight: bold;
+            text-decoration: double;
+        }
+        
+    }
+}
+
+/*Nav de mobile, visible en media query*/
+
+.navmobile{
+    display: none;
+}
+
+/*Regresar al inicio*/
+
+.icono-regresar{
+    font-size: 25px;
+    margin-top: 10px;
+    color: white;
+}
+
+.login{
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+}
+
+.contenedor-img-header{
+    height: 698px;
+    padding-top:80px;
+    background-image: url('../img/fondo-header.jpg');
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+
+    .contenedor-frase-header{
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        width: 90%;
+        margin: 0 auto;
+    
+        font-family:$fuente-segoe;
+        font-weight: bold;
+        color: white;
+        
+        .contenedor-frase-uno{
+            font-size: 45px;
+            margin: 10px;
+            width: 50%;
+
+            p{
+                margin: 30px 0;
+            }
+        }
+
+        .contenedor-frase-dos{
+            width: 50%;
+            font-size: 30px;
+            background-color: rgba(191, 47, 191, 0.634);
+            border-radius: 20px;
+            margin: 10px;
+
+            p{
+                margin: 30px 0;
+            }
+        }
+        
+    }
+}
+
+#fraseuno{
+    animation-name: fraseunoparpadea;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count:unset;
+
+    -webkit-animation-name:fraseunoparpadea;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count:unset;
+}
+
+@-moz-keyframes fraseunoparpadea{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes fraseunoparpadea{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes fraseunoparpadea {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+
+.contenedor-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+
+    height: 690px;
+    font-family:$fuente-segoe;
+    text-align: center;
+
+    .contenedor-quienes-somos{
+        width: 60%;
+
+        #parrafo-quienes-somos{
+            color: white;
+            font-weight: lighter;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+.contenedor-mapa{
+    width: 40%;
+
+    #intro-mapa{
+        color: white;
+        font-size: 25px;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: $fuente-segoe;
+    }
+    
+    #imagen-mapa{
+        height: 350px;
+        width: 350px;
+        border-radius: 20px;
+    }
+    
+}
+
+.titulos-secciones{
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.underline-qs{
+    width: 84%;
+    max-width: 285px;
+    margin: 0 auto;
+    max-height: 381px;
+    border: 1px solid rgb(191, 47, 191);
+    transform: matrix(1,0,0,-1,0,0);
+    opacity: .5;
+    margin-bottom: 20px;
+}
+
+.underline-tm{
+    width: 84%;
+    max-width: 400px;
+    margin: 0 auto;
+    max-height: 381px;
+    border: 1px solid rgb(191, 47, 191);
+    transform: matrix(1,0,0,-1,0,0);
+    opacity: .5;
+    margin-bottom: 30px;
+}
+
+.contenedor-shopmascotas{
+    text-align: center;
+    padding-top: 70px;
+    font-family:$fuente-segoe;
+
+    .contenedor-imagenes-sm{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 50px;
+        text-align: center;
+
+        .img-sm{
+            height: 250px;
+            width: 250px;
+            margin: 20px;
+            border: 2px solid #62d0ff;
+            border-radius: 10px;
+        }
+
+        .img-sm:hover{
+            transition: 1s;
+            -webkit-transform:scale(1.2);transform:scale(1.2);   
+        }
+    }
+}
+
+
+
+.titulos-sm{
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: white;
+}
+
+.contenedor-banners{
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+
+    .img-banners{
+        margin: 30px;
+        height: 300px;
+        width: 500px;
+        border-radius: 20px;
+    }
+    
+    .img-banners:hover{
+        transition: 0.7s;
+        width: 510px;
+        filter: grayscale(80%);
+    }
+}
+
+.contenedor-contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 700px;
+    font-family:$fuente-segoe;
+    text-align: center;
+    padding: 70px;
+}
+
+.underline-c{
+    width: 84%;
+    max-width: 285px;
+    margin: 0 auto;
+    max-height: 381px;
+    border: 1px solid rgb(191, 47, 191);
+    transform: matrix(1,0,0,-1,0,0);
+    opacity: .5;
+}
+
+.contenedor-titulo{
+    width: 500px;
+    text-align: center;
+}
+
+.contenedor-form-contactanos{
+    height: 530px;
+    width: 330px;
+    margin: 50px;
+    padding: 30px;
+
+    border: 2px solid #62d0ff;
+    border-radius: 20px;
+    font-family:$fuente-segoe;
+}
+
+.inputs-contactanos{
+    border: none;
+    border-bottom: 1px solid #62d0ff;
+    font-size: 13px;
+    letter-spacing: .04em;
+    color: #fff;
+    width: 100%;
+    outline: none;
+    padding-bottom: 9px;
+    margin-bottom: 22px;
+    background: none;
+    -webkit-text-fill-color: #fff;
+    box-shadow: inset 0 0 0 1000px transparent;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+textarea{
+    width: 90%;
+    height: 255px;
+    border: 1px solid #62d0ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: transparent;
+    margin: 12px auto 0;
+    padding: 15px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: .04em;
+    outline: none;
+    resize: none;
+}
+
+.textarea-adopta{
+    height: 140px;
+}
+
+
+
+.button{
+    cursor: pointer;
+    width: 154px;
+    height: 44px;
+    color: #fff;
+    contain: none;
+    line-height: 16px;
+    background: rgb(191, 47, 191);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: .04em;
+    border: 1px;
+    border-color: rgb(191, 47, 191);
+}
+
+.button:hover{
+    background-color: rgb(135, 32, 135);
+    border-color:  rgb(135, 32, 135);
+}
+
+.contenedor-footer{
+    background-color: rgba(98,208,255,.15);
+    height: 200px;
+    margin-top: 30px;
+    font-family:$fuente-segoe;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.iconos-footer{
+    font-size: 25px;
+    margin: 5px;
+}
+
+
+/*CSS DE ADOPTA*/
+
+.contenedor-img-adopta{
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    background-image: url('../img/perrito.jpg');
+    padding-top: 90px;
+    font-family:$fuente-segoe;
+}
+
+.titulo-solicitud{
+    color: #000829;
+    font-weight: lighter;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.underline-adopta{
+    width: 90%;
+    max-width: 370px;
+    margin: 0 auto;
+    max-height: 381px;
+    border: 1px solid rgb(191, 47, 191);
+    transform: matrix(1,0,0,-1,0,0);
+    opacity: .5;
+}
+
+.contenedor-form-adopta{
+    height: 570px;
+    width: 400px;
+    margin: 50px;
+    padding: 30px;
+
+    background-color: #000829ca;
+    border: 2px solid #62d0ff;
+    border-radius: 20px;
+    color: white;
+}
+
+.inputs-form-adopta{
+    margin: 10px;
+}
+
+.input-adopta{
+    border: none;
+    border-bottom: 1px solid #62d0ff;
+    font-size: 13px;
+    letter-spacing: .04em;
+    color: #fff;
+    width: 100%;
+    outline: none;
+    padding-bottom: 9px;
+    margin-bottom: 22px;
+    background: none;
+    -webkit-text-fill-color: #fff;
+    box-shadow: inset 0 0 0 1000px transparent;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.select-adopta{
+    border: none;
+    border-bottom: 1px solid #62d0ff;
+    font-size: 13px;
+    letter-spacing: .04em;
+    color: rgb(0, 0, 0);
+    width: 20%;
+    outline: none;
+    padding-bottom: 9px;
+    background: none;
+    -webkit-text-fill-color: #fff;
+    box-shadow: inset 0 0 0 1000px transparent;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    font-family:$fuente-segoe;
+}
+
+.boton-enviar{
+    border-radius: 10px;
+}
+
+.adopta{
+    margin-top: 0;
+}
+
+/*CSS DE INICIASESION*/
+
+.contenedor-iniciosesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family:$fuente-segoe;
+    text-align: center;
+    padding: 100px;
+}
+
+.underline-is{
+    width: 84%;
+    max-width: 285px;
+    margin: 0 auto;
+    max-height: 381px;
+    border: 1px solid rgb(191, 47, 191);
+    transform: matrix(1,0,0,-1,0,0);
+    opacity: .5;
+    margin-bottom: 20px;
+}
+
+.contenedor-form-is{
+    width: 330px;
+    margin: 50px;
+    padding: 30px;
+
+    border: 2px solid #62d0ff;
+    border-radius: 20px;
+    font-family:$fuente-segoe;
+}
+
+/*CSS DE EVENTOS*/
+
+.contenedor-header-eventos{
+        height: 699px;
+        padding-top:80px;
+        background-image: url('../img/perrosevento.jpg');
+        background-size:cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+}
+
+.contenedor-frase-eventos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+
+    font-family:$fuente-segoe;
+    font-weight: bold;
+    color: white;
+}
+
+.frase-eventos{
+    font-size: 45px;
+    margin: 10px;
+}
+
+.contenedor-eventos-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.img-eventos{
+    width: 350px;
+    height: 350px;
+}
+
+.footer-eventos{
+    margin-top: 50px;
+}
+
+
+/*CSS DE SECTOR VETERINARIO*/
+
+.contenedor-sector-vete{
+    padding-top: 90px;
+}
+
+.img-carousel{
+    height: 550px;
+    margin: 0 auto;
+}
+
+
+ /* media query para mobile */
+
+ @media screen and (max-width:480px) {
+
+    .wrapper{
+        overflow: hidden;
+    }    
+
+    .header-nav {
+        display: none
+    }
+
+    .navmobile{
+        display: inherit;
+        background-color: rgba(15,38,73,.95) !important;
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+    }
+
+    .contenedor-img-header .contenedor-frase-header {
+        flex-direction: column;
+        margin: 0 auto;
+
+        .contenedor-frase-uno{
+            width: 100%;
+        }
+        
+        .contenedor-frase-dos{
+            width: 100%;
+    
+        }
+    }
+
+    .contenedor-main{
+        flex-direction: column;
+        height: inherit;
+
+        .contenedor-quienes-somos{
+            width: 100%;
+        }
+    
+        .contenedor-mapa{
+            width: 100%;
+        }
+    }
+
+    .contenedor-shopmascotas .contenedor-imagenes-sm {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 50px;
+        text-align: center;
+        grid-template-columns: inherit;
+        grid-column-gap: inherit;
+    }
+
+    .contenedor-banners{
+        height: inherit;
+        grid-template-columns: inherit;
+        grid-column-gap: inherit;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        text-align: center;
+
+        .img-banners{
+            margin: 10 auto;
+            height: 300px;
+            width: 90%;
+        }
+    }
+
+    .contenedor-form-contactanos{
+        margin: 10 auto;
+        width: 90vw;
+        box-sizing: border-box;
+        height: inherit;
+    }
+
+    .contenedor-footer{
+        flex-direction: column;
+    }
+    
+    .contenedor-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contenedor-links-usuario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo{
+        color: white;
+        font-size: 35px;
+        margin: 5px;
+    }
+    
+    .icono-regresar{
+        font-size: 25px;
+        margin-top: 10px;
+        color: white;
+    }
+    
+    .span-nav {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    #link-spam-nav{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .lista-nav {
+        font-size: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .item-lista-nav {
+        font-size: 25px;
+        margin: 10px;
+    }
+    
+    .link-nav {
+        text-decoration: none;
+        color: rgb(191, 47, 191);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .link-nav:hover{
+        transition: 0.7s;
+        color: white;
+        font-weight: bold;
+        text-decoration: double;
+    }
+    
+    .login{
+        font-size: 30px;
+        color: white;
+        margin: 10px;
+    }
+
+    .img-banners:hover{
+        transition: 0.7s;
+        width: 90% !important;
+        filter: none;
+    }
+
+    .titulo-solicitud{
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    
+    .underline-adopta{
+        width: 90%;
+        max-width: 370px;
+        margin: 0 auto;
+        max-height: 381px;
+        border: 1px solid rgb(191, 47, 191);
+        transform: matrix(1,0,0,-1,0,0);
+        opacity: .5;
+    }
+    
+    .contenedor-form-adopta{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .contenedor-titulo{
+        width: 100%;
+    }
+
+    .img-carousel{
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .footer-vete{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .contenedor-eventos-2{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: none;
+    }
+    
+}
