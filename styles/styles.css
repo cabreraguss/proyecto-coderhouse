@@ -180,26 +180,6 @@ body {
   text-transform: uppercase;
   margin: 10px; }
 
-.underline-qs {
-  width: 84%;
-  max-width: 285px;
-  margin: 0 auto;
-  max-height: 381px;
-  border: 1px solid #bf2fbf;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-  opacity: .5;
-  margin-bottom: 20px; }
-
-.underline-tm {
-  width: 84%;
-  max-width: 400px;
-  margin: 0 auto;
-  max-height: 381px;
-  border: 1px solid #bf2fbf;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-  opacity: .5;
-  margin-bottom: 30px; }
-
 .contenedor-shopmascotas {
   text-align: center;
   padding-top: 70px;
@@ -250,15 +230,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   padding: 70px; }
-
-.underline-c {
-  width: 84%;
-  max-width: 285px;
-  margin: 0 auto;
-  max-height: 381px;
-  border: 1px solid #bf2fbf;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-  opacity: .5; }
 
 .contenedor-titulo {
   width: 500px;
@@ -367,15 +338,6 @@ textarea {
   text-transform: uppercase;
   margin-bottom: 10px; }
 
-.underline-adopta {
-  width: 90%;
-  max-width: 370px;
-  margin: 0 auto;
-  max-height: 381px;
-  border: 1px solid #bf2fbf;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-  opacity: .5; }
-
 .contenedor-form-adopta {
   height: 570px;
   width: 400px;
@@ -436,16 +398,6 @@ textarea {
   text-align: center;
   padding: 100px; }
 
-.underline-is {
-  width: 84%;
-  max-width: 285px;
-  margin: 0 auto;
-  max-height: 381px;
-  border: 1px solid #bf2fbf;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-  opacity: .5;
-  margin-bottom: 20px; }
-
 .contenedor-form-is {
   width: 330px;
   margin: 50px;
@@ -501,6 +453,37 @@ textarea {
 .img-carousel {
   height: 550px;
   margin: 0 auto; }
+
+/*FUNCIONES SASS*/
+.underline-adopta {
+  width: 84%;
+  max-width: 370px;
+  margin: 0 auto;
+  max-height: 381px;
+  border: 1px solid #bf2fbf;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  opacity: .5;
+  margin-bottom: 20px; }
+
+.underline-c, .underline-is, .underline-qs {
+  width: 84%;
+  max-width: 285px;
+  margin: 0 auto;
+  max-height: 381px;
+  border: 1px solid #bf2fbf;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  opacity: .5;
+  margin-bottom: 20px; }
+
+.underline-tm {
+  width: 84%;
+  max-width: 400px;
+  margin: 0 auto;
+  max-height: 381px;
+  border: 1px solid #bf2fbf;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  opacity: .5;
+  margin-bottom: 20px; }
 
 /* media query para mobile */
 @media screen and (max-width: 480px) {
@@ -610,14 +593,6 @@ textarea {
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 10px; }
-  .underline-adopta {
-    width: 90%;
-    max-width: 370px;
-    margin: 0 auto;
-    max-height: 381px;
-    border: 1px solid #bf2fbf;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-    opacity: .5; }
   .contenedor-form-adopta {
     width: 90%;
     margin: 20px auto; }
