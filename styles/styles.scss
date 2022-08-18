@@ -226,11 +226,15 @@ $fuente-segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 
-.titulos-secciones{
+.titulo-general{
     color: white;
-    font-size: 30px;
     font-weight: lighter;
     text-transform: uppercase;
+}
+
+.titulos-secciones{
+    @extend .titulo-general;
+    font-size: 30px;
     margin: 10px;
 }
 
@@ -263,10 +267,8 @@ $fuente-segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
 .titulos-sm{
+    @extend .titulo-general;
     font-size: 20px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    color: white;
 }
 
 .contenedor-banners{

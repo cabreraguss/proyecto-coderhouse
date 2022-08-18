@@ -173,11 +173,13 @@ body {
     width: 350px;
     border-radius: 20px; }
 
-.titulos-secciones {
+.titulo-general, .titulos-secciones, .titulos-sm {
   color: white;
-  font-size: 30px;
   font-weight: lighter;
-  text-transform: uppercase;
+  text-transform: uppercase; }
+
+.titulos-secciones {
+  font-size: 30px;
   margin: 10px; }
 
 .contenedor-shopmascotas {
@@ -201,10 +203,7 @@ body {
       transform: scale(1.2); }
 
 .titulos-sm {
-  font-size: 20px;
-  font-weight: lighter;
-  text-transform: uppercase;
-  color: white; }
+  font-size: 20px; }
 
 .contenedor-banners {
   height: 450px;
