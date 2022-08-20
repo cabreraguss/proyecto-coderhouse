@@ -218,11 +218,6 @@ $fuente-segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-family: $fuente-segoe;
     }
     
-    #imagen-mapa{
-        height: 350px;
-        width: 350px;
-        border-radius: 20px;
-    }
     
 }
 
@@ -403,7 +398,6 @@ textarea{
     margin: 5px;
 }
 
-
 /*CSS DE ADOPTA*/
 
 .contenedor-img-adopta{
@@ -564,7 +558,6 @@ textarea{
     height: 550px;
     margin: 0 auto;
 }
-
 /*FUNCIONES SASS*/
 
 @mixin size-underline ($largo) {
@@ -778,5 +771,4 @@ textarea{
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: none;
     }
-    
 }
