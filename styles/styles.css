@@ -161,17 +161,14 @@ body {
       margin: 0 auto; }
 
 .contenedor-mapa {
-  width: 40%; }
+  width: 40%;
+  padding-right: 12px; }
   .contenedor-mapa #intro-mapa {
     color: white;
     font-size: 25px;
     font-style: italic;
     font-weight: lighter;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
-  .contenedor-mapa #imagen-mapa {
-    height: 350px;
-    width: 350px;
-    border-radius: 20px; }
 
 .titulo-general, .titulos-secciones, .titulos-sm {
   color: white;
@@ -307,15 +304,14 @@ textarea {
 .contenedor-footer {
   background-color: rgba(98, 208, 255, 0.15);
   height: 200px;
-  margin-top: 50px;
+  margin-top: 30px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
   align-items: center;
-  color: white; 
-}
+  color: white; }
 
 .iconos-footer {
   font-size: 25px;
@@ -396,7 +392,8 @@ textarea {
   align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  padding: 100px; }
+  padding: 100px;
+  min-height: 85vh; }
 
 .contenedor-form-is {
   width: 330px;
@@ -448,7 +445,8 @@ textarea {
 
 /*CSS DE SECTOR VETERINARIO*/
 .contenedor-sector-vete {
-  padding-top: 90px; }
+  padding-top: 90px;
+  min-height: 85vh; }
 
 .img-carousel {
   height: 550px;
@@ -485,10 +483,26 @@ textarea {
   opacity: .5;
   margin-bottom: 20px; }
 
-/* media query para mobile */
-@media screen and (max-width: 480px) {
-  .wrapper {
-    overflow: hidden; }
+@media screen and (max-width: 1024px) {
+  .contenedor-shopmascotas .contenedor-imagenes-sm {
+    grid-template-columns: repeat(2, 1fr); }
+  .contenedor-banners {
+    grid-template-columns: none !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+    height: inherit !important; }
+    .contenedor-banners .img-banners {
+      margin: 30px;
+      height: 300px;
+      width: 500px;
+      border-radius: 20px; }
+    .contenedor-banners .img-banners:hover {
+      transition: 0.7s;
+      width: 510px;
+      filter: grayscale(80%); }
+  .contenedor-contactanos {
+    height: inherit; } }
+
+@media screen and (max-width: 900px) {
   .header-nav {
     display: none; }
   .navmobile {
@@ -496,7 +510,14 @@ textarea {
     background-color: rgba(15, 38, 73, 0.95) !important;
     position: fixed;
     width: 100%;
-    z-index: 20; }
+    z-index: 20; } }
+
+/* media query para mobile */
+@media screen and (max-width: 480px) {
+  .wrapper {
+    overflow: hidden; }
+  .contenedor-img-header {
+    height: inherit; }
   .contenedor-img-header .contenedor-frase-header {
     flex-direction: column;
     margin: 0 auto; }
@@ -510,7 +531,8 @@ textarea {
     .contenedor-main .contenedor-quienes-somos {
       width: 100%; }
     .contenedor-main .contenedor-mapa {
-      width: 100%; }
+      width: 100%;
+      padding-left: 12px; }
   .contenedor-shopmascotas .contenedor-imagenes-sm {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
